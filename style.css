@@ -14,7 +14,7 @@
     .css-14le3h7 {
         top: 200px;
         left: 200px;
-        right: 0px;
+        right: 30px;
         display: flex;
         flex-direction: row;
         justify-content: center; /* Centraliza horizontalmente */
@@ -34,7 +34,7 @@
         display: flex;
         flex-direction: row;
         justify-content: center; /* Centraliza horizontalmente */
-        align-items: center; /* Centraliza verticalmente */
+        align-items: auto; /* Centraliza verticalmente */
     }
     
     .css-14le3h8 img {
@@ -44,46 +44,47 @@
     }
     
     
-    /* Estilo para a caixa com bordas redondas */
-    .box-com-bordas {
-        border-radius: 15px;
-        box-shadow: 0px 5px 15px 5px rgba(0, 0, 0, 0.315);
-        max-width: 900px;
-        top: 19px;
-        margin: 15px; /* Centraliza a caixa horizontalmente */
-        height: 800px; /* Ajuste a altura conforme necessário */
-        overflow: hidden; /* Esconde qualquer conteúdo que ultrapasse as bordas */
-    }
-    
-    .box-com-bordas iframe {
-        border: none;
-        width: 100%;
-        height: 100%;
-    }
-    
-    
-    
-    .css-kzkx1t {
-        height: 100%;
-        width: 100%;
-    }
-    
-    .css-1pojmvr {
-        height: 100%;
-        width: 100%;
-    }
-    
-    .css-1c88qfb {
-        height: 100%;
-        width: 100%;
-    }
-    
-    iframe {
-        border: none;
-        width: 100%;
-        height: 100%;
-    }
-    
+     /* Estilo para a caixa com bordas redondas */
+   /* Estilo para a caixa com bordas redondas */
+   .box-com-bordas {
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px 5px rgba(0, 0, 0, 0.178);
+    max-width: 900px;
+    top: 900px;
+    margin: 10px; /* Centraliza a caixa horizontalmente */
+    height: 900px; /* Ajuste a altura conforme necessário */
+    overflow: hidden; /* Esconde qualquer conteúdo que ultrapasse as bordas */
+}
+
+.box-com-bordas iframe {
+    border: none;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.css-kzkx1t {
+    height: 100%;
+    width: 100%;
+}
+
+.css-1pojmvr {
+    height: 100%;
+    width: 100%;
+}
+
+.css-1c88qfb {
+    height: 100%;
+    width: 100%;
+}
+
+iframe {
+    border: none;
+    width: 60%;
+    height: 600%;
+}
+
 /* Estilo para o conteúdo dentro da caixa */
 .css-wbgyl1 {
     width: 100%;
