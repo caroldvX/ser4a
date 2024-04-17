@@ -1,0 +1,90 @@
+/* Estilo para o cabeçalho */
+.header {
+    background-color: blue; /* Cor de fundo azul */
+    padding: 10px; /* Espaçamento interno */
+    margin: 0; /* Remover margem padrão */
+    width: 100%; /* Largura total */
+    box-sizing: border-box; /* Garante que padding e bordas não aumentem a largura */
+    position: fixed; /* Fixar o cabeçalho no topo */
+    top: 0; /* Posicionar no topo */
+    z-index: 999; /* Para garantir que fique sobre os outros elementos */
+}
+
+/* Estilo para o texto do cabeçalho */
+.header h1 {
+    margin: 0; /* Remover margem padrão */
+    color: white; /* Cor do texto branco */
+    text-align: center; /* Centralizar o texto */
+}
+
+/* Outros estilos */
+.logo-gov {
+    padding: 0;
+    height: 90px;
+    object-fit: contain;
+    margin: 30px auto 20px; /* Margem na parte inferior e centralização horizontal */
+    display: block; /* Para garantir que as imagens fiquem uma abaixo da outra */
+    cursor: pointer;
+    z-index: 9;
+}
+
+.logo-2minutos {
+    padding: 0;
+    height: 50px;
+    margin: 20px auto 0; /* Margem na parte superior e centralização horizontal */
+    display: block; /* Para garantir que as imagens fiquem uma abaixo da outra */
+    cursor: pointer;
+    z-index: 9;
+}
+
+
+.container-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px; /* Adicionei uma margem superior para compensar o cabeçalho fixo */
+}
+
+.card-typebot {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    background: rgb(255, 255, 255);
+    border-radius: 4px;
+    width: 100vw;
+    overflow: hidden;
+    max-width: 900px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px 5px rgba(0, 0, 0, 0.2);
+    height: calc(100% - 150px);
+}
+
+.card-typebot iframe {
+    width: 100%;
+    height: 95%;
+    margin-top: 15px;
+    min-height: 700px;
+    border: none;
+}
+
+.card-typebot .footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    color: rgb(8, 103, 184);
+    font-size: 14px;
+    padding: 5px 0px;
+}
+
+.card-typebot .footer span {
+    display: flex;
+    gap: 10px;
+}
+
+
+
+
+
+
